@@ -2,7 +2,7 @@
 * Template Helper Stylesheet
 *
 * You are free to use these extra prepared helper classes to customize your web site.
-* Template main color: #4FA64F;
+* Template main color: #C1A387;
 --------------------------------------------------------------------------------------- */
 
 /* Table of Content
@@ -514,7 +514,7 @@
  *  Text color classes
 /* ------------------------------------------------------------- */
 
-.text-main { color: #4FA64F !important; } /* Template main color */
+.text-main { color: #C1A387 !important; } /* Template main color */
 .text-white { color: #FFF !important; }
 .text-gray { color: #888 !important; }
 .text-gray-2 { color: #CCC !important; }
@@ -524,7 +524,7 @@
 .text-dark-3 { color: #666 !important; }
 .text-green { color: #69CE00 !important; }
 .text-blue { color: #1868c7 !important; }
-.text-yellow { color: #4FA64F !important; }
+.text-yellow { color: #C1A387 !important; }
 .text-red { color: #e8000b !important; }
 .text-brown { color: #A78339 !important; }
 .text-purple { color: #800080 !important; }
@@ -535,7 +535,7 @@
  *  Link color classes
 /* ------------------------------------------------------------- */
 
-.link-main a { color: #4FA64F !important; } /* Template main color */
+.link-main a { color: #C1A387 !important; } /* Template main color */
 .link-white a { color: #FFF !important; }
 .link-gray a { color: #888 !important; }
 .link-gray-2 a { color: #CCC !important; }
@@ -545,7 +545,7 @@
 .link-dark-3 a { color: #666 !important; }
 .link-green a { color: #69CE00 !important; }
 .link-blue a { color: #1868c7 !important; }
-.link-yellow a { color: #4FA64F !important; }
+.link-yellow a { color: #C1A387 !important; }
 .link-red a { color: #e8000b !important; }
 .link-brown a { color: #A78339 !important; }
 .link-purple a { color: #800080 !important; }
@@ -558,7 +558,7 @@
 
 .no-bg { background: none !important; } /* 100% transparent (no background image, no background color) */
 
-.bg-main { background-color: #4FA64F !important; } /* Template main color */
+.bg-main { background-color: #C1A387 !important; } /* Template main color */
 .bg-main-2 { background-color: #fff58e !important; } /* Template main color light version */
 .bg-main-3 { background-color: #fffcd6 !important; } /* Template main color lightest version */
 .bg-white { background-color: #FFF !important; }
@@ -570,7 +570,7 @@
 .bg-dark-3 { background-color: #222 !important; }
 .bg-green { background-color: #69CE00 !important; }
 .bg-blue { background-color: #1868c7 !important; }
-.bg-yellow { background-color: #4FA64F !important; }
+.bg-yellow { background-color: #C1A387 !important; }
 .bg-red { background-color: #e8000b !important; }
 .bg-brown { background-color: #A78339 !important; }
 .bg-purple { background-color: #800080 !important; }
@@ -944,11 +944,11 @@
 .border-right-outset { border-right-style: outset !important; }
 
 /* border color classes */
-.border-main { border-color: #4FA64F !important; } /* template main color */
-.border-top-main { border-top-color: #4FA64F !important; } /* template main color */
-.border-bottom-main { border-bottom-color: #4FA64F !important; } /* template main color */
-.border-left-main { border-left-color: #4FA64F !important; } /* template main color */
-.border-right-main { border-right-color: #4FA64F !important; } /* template main color */
+.border-main { border-color: #C1A387 !important; } /* template main color */
+.border-top-main { border-top-color: #C1A387 !important; } /* template main color */
+.border-bottom-main { border-bottom-color: #C1A387 !important; } /* template main color */
+.border-left-main { border-left-color: #C1A387 !important; } /* template main color */
+.border-right-main { border-right-color: #C1A387 !important; } /* template main color */
 
 .border-white { border-color: #FFF !important; }
 .border-top-white { border-top-color: #FFF !important; }
