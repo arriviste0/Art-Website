@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+html {
+    scroll-behavior: smooth;
+    cursor: none;
+    overflow-x: hidden;
+  }
+::selection{
+    background-color: #CCAE94;
+    color: #111;
+}
+body{
+    font-family: "Kalnia", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #111;
+}
+::-webkit-scrollbar-thumb {
+    background: #CCAE94;
+}
+.nav-wrapper{
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 10px;
+}
+.nav-wrapper .nav-logo{
+    height: 10vh;
+    width: 20vh;
+    background: url('./image-removebg-preview\ \(1\).png');
+    background-size: contain;
+    margin-left: 2.5vw;
+}
+.nav-wrapper .nav-links{
+    flex: 1.5;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:60vw;
+}
+.nav-wrapper .nav-links a{
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    font-size: 1.3vw;
+}
+.nav-wrapper .nav-links a:hover{
+    color: #CCAE94;
+}
+#carousel-title,#carousel-para{
+    transition: opacity 0.2s ease;
+}
+.landing-div{
+    height:100vh;
+    background: url('https://images.pexels.com/photos/672630/pexels-photo-672630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    width: 100%;
+    transition: background-image 0.2s ease-in;
+}
+.carousel-wrapper {
+    width: 100%;
+    height: 87.5%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #eee;
+    display: flex;
+    transition: background 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-info {
+    flex: 1;
+    margin-left: 2.5vw;
+    margin-top: 25vw;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-info h1 {
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.carousel-info p {
+    margin-top: -1.5vw;
+}
+
+.carousel-control {
+    flex: 0.3;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36.5vw;
+    margin-left: -2.5vw;
+}
+
+.carousel-control button {
+    background: transparent;
+    border: none;
+    flex: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.carousel-control button:hover{
+    margin-top: -1vw;
+}
+.services-div{
+    height: 100vh;
+    width: 100%;
+    background: #111;
+    display: flex;
+    align-items: center;
+}
+.services-div .services-title{
+    color: #CCAE94;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    flex: 0.75;
+    margin-left: 5vw;
+}
+.services-div .services-img{
+    flex: 0.5;
+    height: 80vh;
+    border-radius: 15vw;
+    border: 2px solid #CCAE94;
+    margin-left: 5vw;
+}
+.services-div .services-img .services-asset{
+    width: 80%;
+    height: 90%;
+    background: url('https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    margin-left: 10%;
+    margin-top: 8.75%;
+    border-radius: 12.5vw;
+}
+.services-div .services-list {
+    flex: 1;
+    color: #CCAE94;
+}
+.services-div .services-list p{
+    width: 30vw;
+    margin-left: 5vw;
+}
+.offer-div{
+    height: 120vh;
+    width: 100%;
+    background: #CCAE94;
+    padding-top: 2.5vw;
+}
+.offer-div span,
+.contact-div span{
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+.offer-div span {
+    color: #866047;
+}
+.offer-div .offer-btn-control{
+    margin: 3.5vw 5vw;
+}
+.offer-div .offer-btn-control button{
+    border: none;
+    background: transparent;
+    font-family: "Kalnia", sans-serif;
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #111;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+}
+.offer-div .offer-btn-control button::before{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 50%;
+    background-color: #111;
+    margin-top: 2vw;
+    transition: width 0.2s ease;
+}
+.offer-div .offer-btn-control button:hover::before{
+    width: 100%;
+}
+.offer-div .offer-btn-control button:nth-child(2){
+    margin-left: 2.5vw;
+}
+.offer-carousel-cards-control button {
+    margin-right: 1.5vw;
+}
+.offer-carousel-cards-control{
+    margin-left: 87.5%;
+    margin-top: -4.5vw;
+}
+.offer-carousel-cards-control button{
+    border:  none;
+    background: transparent;
+    font-size: 1.2vw;
+    cursor: pointer;
+    color: #866047;
+}
+.offer-carousel-wrapper .offer-carousel-cards{
+   height: 75vh;
+   width: 87.5%;
+   margin: 2.5vw 5vw; 
+}
+.offer-carousel-cards.card-home {
+    transition: all 0.5s ease;
+    animation: fade 0.5s ease;
+
+}
+
+.offer-carousel-cards.card-des {
+    transition: all 0.5s ease;
+    animation: fade 0.5s ease;
+}
+.offer-container {
+    position: absolute;
+    top:25vw;
+    left:42.5%;
+    transition: all 0.5s ease;
+    animation: fade 0.5s ease;
+}
+.offer-card{
+    height: 45vh;
+    width:30vh;
+    position: absolute;
+    z-index:9;
+    transition:all 500ms ease;
+    background-size: cover !important;
+  }
+  .c1{
+    transform:translateX(0) scale(1.5);
+    z-index:99;
+  }
+  .c2{
+    transform:translateX(-25vw) scale(1.2);
+  }
+  .c3{
+    transform:translateX(25vw) scale(1.2);
+  }
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.extra-div{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    background-color: #866047;
+}
+.extra-div .extra-para{
+    padding-top: 5vw;
+    max-width: 60vw;
+}
+.extra-div .extra-para p{
+    color: #CCAE94;
+    font-size: 1.35vw;
+    font-weight: 500;
+}
+.extra-div .extra-para button{
+    border: none;
+    padding: 10px;
+    background: #CCAE94;
+    color: #111;
+    font-size: 1.15vw;
+    font-family: "Kalnia", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1.5vw;
+}
+.footer-div{
+    background: #111;
+    height: 50vh;
+    display: flex;
+    padding: 10px;  
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    align-items: center;  
+    justify-content: center;
+    position: relative;
+}
+
+.footer-div .footer-info{
+    flex: 0.5;
+}
+.footer-div .footer-info h2{
+    font-size: 1.25vw;
+    font-weight: 500;
+    color: #CCAE94;
+}
+.footer-div .footer-info p{
+    color: rgba(255,255,255,0.5);
+}
+.footer-div .footer-logo{
+    flex: 0.4;
+}
+.footer-div .footer-logo img{
+    transform: scale(0.5);
+    margin-left: -1.5vw
+}
+.footer-div .footer-subscribe form input{
+    background: transparent;
+    border: 2px solid #CCAE94;
+    padding: 10px;
+    color: #eee;
+    width: 13.5vw;
+    font-family: "Kalnia", sans-serif;
+}
+.footer-div .footer-subscribe form input::placeholder{
+    color: #eeeeeea0;
+    font-family: "Kalnia", sans-serif;
+}
+.footer-div .footer-subscribe form input:focus{
+    outline: none;
+}
+.footer-div .footer-subscribe p{
+    color: #eee;
+}
+.footer-div .footer-subscribe ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -4.2vw;
+}
+.footer-div .footer-subscribe .fa-brands{
+    font-family: 'Font Awesome', sans-serif;
+}
+.footer-div .footer-subscribe a {
+    text-decoration:  none;
+    cursor: pointer;
+    color: #CCAE94;
+    font-size: 1.5vw;
+}
+.footer-div .footer-subscribe form{
+    display: flex;
+}
+.footer-div .footer-subscribe button{
+    padding: 10px;
+    background: #CCAE94;
+    color: #111;
+    border: none;
+    outline: none;
+    font-size: 1.1vw;
+}
+.footer-div p {
+    font-weight: light;
+}
+.contact-div{
+    height: 110vh;
+    background: #111;
+    padding-top: 5vw;
+    width: 100%;
+}
+.contact-div span{
+    color: #866047;
+}
+.contact-div .contact-wrapper{
+    display: flex;
+    margin-top: 7.5vw;
+    padding-left: 5vw;
+}
+.contact-div .contact-wrapper .contact-form{
+    margin-top: 2.5vw;
+}
+.contact-div .contact-wrapper .contact-form,
+.contact-div .contact-wrapper .contact-map-embed{
+    flex: 1;
+}
+.contact-div .contact-wrapper .contact-map-embed{
+    margin-left: 5vw;
+}
+.contact-div .contact-form form input[type=text],
+.contact-div .contact-form form textarea{
+    background-color: #111;
+    color: #eee;
+    font-family: "Kalnia", sans-serif;
+    border: none;
+    border-bottom: 2px solid #CCAE94;
+    padding: 10px;
+    font-size: 1vw;
+    transition: all 0.1s ease;
+}
+.contact-div .contact-form form textarea{
+    height: 20vh;
+    width: 41.5vw;
+    margin-top: 2.5vw;
+}
+.contact-div .contact-form form textarea:focus{
+    border-bottom: 5px solid #CCAE94;
+    outline: none;
+}
+.contact-div .contact-form form input[type=text]::placeholder,
+.contact-div .contact-form form textarea::placeholder{
+    color: #eeeeeea0;
+    font-family: "Kalnia", sans-serif;
+}
+.contact-div .contact-form form input[type=text]:focus{
+    outline: none;
+    border-bottom: 5px solid #CCAE94;
+}
+.contact-div .contact-form form .form-gp{
+    display: flex;
+    margin-bottom: 1.5vw;
+}
+.contact-div .contact-form form .form-gp input[type=text]{
+    width: 17.5vw;
+}
+.contact-div .contact-form form .form-gp input[type=text]:first-child{
+    margin-right: 5vw;
+}
+.contact-div .contact-form form .sub{
+    width: 41.5vw;
+}
+.contact-div .contact-form form input[type=submit]{
+    font-family: "Kalnia", sans-serif;
+    padding: 10px;
+    font-size: 1vw;
+    margin-top: 2.5vw;
+    background-color: #CCAE94;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #866047;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+#myBtn i {
+    margin-top:.1vw;
+}
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #eee;
+}
+
+.cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.379); /* Approximation of rgba($primary-light, 0.5) */
+}
+.landing-div .nav-wrapper .nav-ham{
+    display: none;
+}
+.mobile-nav{
+    display: none;
+    width: 0;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width:768px) {
+    .landing-div{
+        height: auto;
+        background-size: contain;
+    }
+    .landing-div .carousel-wrapper{
+        flex-direction: column;
+        padding-bottom: 10vw;
+    }
+    .landing-div .carousel-wrapper .carousel-info{
+        margin-left: 7.5vw;
+        margin-top: 45vw;
+    }
+    .landing-div .carousel-wrapper .carousel-control{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        width: 75%;
+        margin-left: 2.5vw;
+    }
+    .landing-div .carousel-wrapper .carousel-info h1{
+        font-size: 10vw;
+    }
+    .landing-div .carousel-wrapper .carousel-info p{
+        font-size: 3.5vw;
+        width: 85vw;
+    }
+    .landing-div .nav-wrapper .nav-logo{
+        padding: 10vw;
+        margin: 5vw 5vw;
+        background-repeat: no-repeat;
+    }
+    .landing-div .nav-wrapper .nav-links{
+        display: none;
+    }
+    .landing-div .nav-wrapper .nav-ham{
+        display: block;
+        margin: 7.5vw 17.5vw;
+        padding-left: 30vw;
+    }
+    .landing-div .nav-wrapper .nav-ham .lines{
+        width: 35px;
+        height: 2px;
+        background: #eee;
+        margin-bottom: 2.5vw;
+        transition: all 0.5s ease;
+    }
+    .landing-div .nav-wrapper .nav-ham .lines:nth-child(1).active{
+        transform: rotate(45deg) translate(5px, 4px);
+    }
+    .landing-div .nav-wrapper .nav-ham .lines:nth-child(2).active{
+        display: none;
+    }
+    .landing-div .nav-wrapper .nav-ham .lines:nth-child(3).active{
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+    .services-div{
+        flex-direction: column;
+        height: auto;
+    }
+    .services-div .services-title {
+        padding-top: 15vw;
+        font-size: 10vw;
+        line-height: 10vw;
+        margin-left: -25vw;
+    }
+    .services-div .services-img{
+        width: 50vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        border-radius: 50vw;
+    }
+    .services-div .services-img .services-asset{
+        height: 100vw;
+        margin-bottom: 5vw;
+        border-radius: 50vw;
+    }
+    .services-div .services-list p{
+        width: 80vw;
+        margin-bottom: 15vw;
+    }
+    .offer-div{
+        height: auto;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+    .offer-div span{
+        font-size: 7.5vw;
+    }
+    .offer-div .offer-btn-control button{
+        font-size: 5vw;
+        margin-right: 5vw;
+    }
+    .offer-div .offer-btn-control button::before{
+        margin-top: 7.5vw;
+    }
+    .offer-div .offer-carousel-cards-control{
+        font-size: 10vw;
+        margin: 0;
+    }
+    .offer-div .offer-carousel-cards{
+        transform: scale(0.75);
+        margin-top: 1.5vw;
+        margin-left: -10vw;
+    }
+    .offer-carousel-cards-control{
+        margin-top: -15vw !important;
+        margin-left: 75vw !important;
+    }
+    .offer-carousel-cards-control button{
+        font-size: 5vw;
+    }
+    .contact-div{
+        height: auto;
+        padding-top: 10vw;
+    }
+    .contact-div span{
+        font-size: 7.5vw;
+    }
+    .contact-div .contact-wrapper{
+        flex-direction: column;
+    }
+    .contact-div .contact-wrapper .contact-form{
+        margin-left: 5vw;
+    }
+    .contact-div .contact-wrapper .contact-map-embed{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+    .contact-div .contact-wrapper .contact-map-embed iframe {
+        width: 90%;
+        height: 50vw;
+    }
+    .contact-div .contact-wrapper .contact-form form input,
+    .contact-div .contact-wrapper .contact-form form textarea{
+        font-size: 3.5vw;
+    }
+    .contact-div .contact-wrapper .contact-form .form-gp {
+        flex-direction: column;
+    }
+    .contact-div .contact-wrapper .contact-form .form-gp input{
+        width: 75vw !important;
+    }
+    .contact-div .contact-wrapper .contact-form input{
+        width: 75vw !important;
+    }
+    .contact-div .contact-wrapper .contact-form textarea{
+        width: 75vw !important;
+    }
+    .contact-div .contact-wrapper .contact-form input[type=submit]{
+        width: 80vw !important;
+    }
+    .extra-div{
+        height: auto;
+    }
+    .extra-div .extra-para p{
+        font-size: 3.5vw;
+        width: 80vw !important;
+        margin-left: -10vw;
+    }
+    .extra-div button{
+        font-size: 3.5vw !important;
+        margin-bottom: 7.5vw;
+    }
+    .footer-div{
+        flex-direction: column;
+        height: auto;
+        padding-top: 5vw;
+    }
+    .footer-div .footer-info{
+        margin-left: 7.5vw;
+    }
+    .footer-div .footer-info h2{
+        font-size: 4.5vw;
+    }
+    .footer-div .footer-info p{
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .footer-div .footer-logo{
+        transform: scale(0.5);
+        margin-top: -30vw;
+        margin-bottom: 0;
+    }
+    .footer-div .footer-subscribe i{
+        font-size: 4vw;
+    }
+    .footer-div .footer-subscribe form input{
+        width: 60vw;
+    }
+    .mobile-nav.active{
+        position: fixed;
+        display: block;
+        z-index: 555555555;
+        top: 0;
+        height: 100%;
+        background: #111;
+        width: 70vw;
+    }
+    .mobile-nav ul{
+        list-style: none;
+        margin-top: 25vw;
+    }
+    .mobile-nav ul li{
+        margin-bottom: 2.5vw;
+    }
+    .mobile-nav ul li a{
+        text-decoration: none;
+        color: #CCAE94;
+        font-weight: 600;
+        font-size: 4vw;
+    }
+}
